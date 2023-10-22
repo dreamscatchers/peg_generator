@@ -1,0 +1,75 @@
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #333333;
+        }
+
+        h2, h3 {
+            font-family: 'Roboto Slab', serif;
+        }
+
+        .header, .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2E5D86;
+            color: white; /* Font color white for contrast */
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #F7F9FC;
+        }
+
+        .panels {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            overflow: hidden;
+            background-color: #E1E8ED;
+        }
+
+        .debug-section, .grammar-section, .phrase-test-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            background-color: #FFFFFF;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+            flex-shrink: 0;
+        }
+
+        textarea {
+            flex: 1;
+            min-height: 20%;
+            overflow: auto;
+            resize: vertical;
+            padding: 10px;
+            border: 1px solid #E1E8ED;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .output {
+            flex-basis: 5%;
+            overflow: auto;
+            border: 1px solid #E1E8ED;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .debug {
+            border: 1px solid #E1E8ED;
+            height: 100%;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .phrase-test-section {
+            display:none;
+        }

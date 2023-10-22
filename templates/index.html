@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Parser Generator</title>
+</head>
+
+<body>
+    <main>
+        <div class="header">
+            <h1>Custom Parser Generator</h1>
+        </div>
+
+        <div class="panels">
+            <div class="grammar-section">
+                <h2>Grammar Input</h2>
+                <textarea class="grammar-input"></textarea>
+                <div class="grammar-output">:</div>
+            </div>
+            <div class="phrase-test-section">
+                <h2>Test a phrase</h2>
+                <textarea class="pharse-input"></textarea>
+                <div class="phrase-output">:</div>
+            </div>
+            <div class="debug-section">
+                <h2>Debug Window</h2>
+                <div class="debug">
+                    no input
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            Powered by Parsimonious
+        </div>
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    </main>
+</body>
+
+</html>
